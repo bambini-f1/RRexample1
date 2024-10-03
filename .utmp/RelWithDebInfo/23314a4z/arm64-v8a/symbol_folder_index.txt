@@ -1,0 +1,1 @@
+/Users/vitalyreznik/Documents/GitHub/RRexample1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/23314a4z/obj/arm64-v8a

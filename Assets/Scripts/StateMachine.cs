@@ -20,7 +20,7 @@ internal struct StateMachine
         if (gameState == GameState.game){
             Vector2 moveDirection = actionRef.action.ReadValue<Vector2>();
             playerBody.linearVelocity =  new Vector3(moveDirection.x * sideSpeed, playerBody.linearVelocity.y, speedForward);
-            float headCorrect = LocalStore.animationState == AnimationState.walk ? 20 : 0;
+            float headCorrect = LocalStore.animationState == AnimationState.walk ? 0 : 0;
             Quaternion startPoint = playerBody.transform.rotation;
             Quaternion endPoint = Quaternion.Euler(headCorrect, 0, 0);
             Quaternion smoothTarget = Quaternion.Euler(Quaternion.Lerp(startPoint, endPoint, 0.1f).eulerAngles);
